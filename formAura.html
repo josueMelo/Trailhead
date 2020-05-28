@@ -1,37 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Form in HTML 5</title>
-        <meta charset="utf-8">
-        <style>
-            body{
-                margin: 2em;
-            }
-            
-            input{
-                margin: 1px 0 1em 0;
-                width: 14em;
-            }
-        </style>
-    </head>
-    <body>
-        <h2>Form</h2>
-        <form action="">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" placeholder="Type your name">
-            <br>
-                <label for="accountNumber">AccountNumber:</label><br>
-                <input type="text" id="AccountNumber" name="AccountNumber" placeholder="Type your account number">
-            <br>
+
+<head>
+    <title>Form in HTML 5</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            margin: 2em;
+            background-color: rgb(211, 241, 247);
+        }
+
+        input {
+            margin: 1px 0 1em 0;
+            width: 30em;
+            border-style: groove;
+            border-radius: 5px;
+        }
+
+        fieldset {
+            border-radius: 50px;
+            width: 300px;
+            height: 340px;
+            background-color: whitesmoke;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="area">
+        <fieldset>
+            <h2>Form</h2>
+            <form action="">
+                <label for="name">Account name:</label><br>
+                <input type="text" id="Account name" name="Account name" placeholder="Type your Account name">
+                <br>
+                <label for="accountNumber">Account Number:</label><br>
+                <input type="text" id="AccountNumber" name=" Number" placeholder="Type your account number">
+                <br>
                 <label for="type">Type:</label><br>
                 <input type="text" id="type" name="Type" placeholder="Type your type account">
-            <br>
+                <br>
                 <label for="cpf">CPF:</label><br>
                 <input type="text" id="idade" name="cpf" placeholder="Type your CPF">
-            <br>
+                <br>
                 <label for="idade">Telefone:</label><br>
                 <input type="tel" id="idade" name="telefone" placeholder="Type your telephone number">
-            <br>
-        </form>
-    </body>
+                <br>
+            </form>
+        </fieldset>
+    </div>
+
+</body>
+
 </html>
